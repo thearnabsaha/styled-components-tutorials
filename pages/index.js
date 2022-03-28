@@ -4,6 +4,9 @@ const Heading = styled.h1`
 `;
 const Heading2 = styled(Heading)`
   background-color: aquamarine;
+  &:hover{
+  color: ${(props)=>(props.variant==="new"?"orange":"blue")};
+  }
 `;
 const index = () => {
   return (
